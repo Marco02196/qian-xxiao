@@ -1,0 +1,30 @@
+{
+  "kind": "critique-panel",
+  "score": 4.85,
+  "axes": {
+    "clarity": {
+      "score": 4.8,
+      "notes": "首页信息路径保持清晰：Hero、状态卡、官方消息、智慧校园、空调、生活服务和底部导航形成稳定的移动端节奏。"
+    },
+    "hierarchy": {
+      "score": 4.8,
+      "notes": "动效不再抢占视觉中心；入场只辅助用户理解层级，主视觉仍落在开学季 Hero 和玻璃状态卡。"
+    },
+    "typography": {
+      "score": 4.7,
+      "notes": "中文字号层级清楚，动效没有改变文本排版或造成阅读中断；消息加载态保留足够文本占位。"
+    },
+    "motion": {
+      "score": 4.9,
+      "notes": "入场总错峰压缩到约 220ms，只使用 transform/opacity；按钮按压更克制，动画结束后清理动画类，减少长期合成层负担。"
+    },
+    "accessibility": {
+      "score": 4.9,
+      "notes": "prefers-reduced-motion 下直接跳过非必要入场，loading shimmer 停止运动，状态反馈仍通过 aria-live 和 Toast 文本传达。"
+    },
+    "performance": {
+      "score": 4.9,
+      "notes": "避免 width/height/top/left 等布局动画；保留轻量 transform、opacity 与背景状态变化，will-change 只用于实际动画元素。"
+    }
+  }
+}
